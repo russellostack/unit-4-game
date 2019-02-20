@@ -6,21 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star wars!</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 </head>
+
 <body>
-    <div id="wrapper">
-        <div class="container-fluid">
-            <div class = "col-sm-12 col-md-12 col-lg-12 text-center">
-                    <h>Choose your Jedi</h>
+    <div class="container">
+        <div class="row" id="imageCards">
+            <h1>Choose your Hero</h1>
+            <img id='maul' class='col-sm-3 char mx-auto d-block' src='assets/images/darthmaul.jpg'>
+            <img id='vader' class='col-sm-3 char mx-auto d-block' src='assets/images/darthvader.jpg'>
+            <img id='luke' class='col-sm-3 char mx-auto d-block' src='assets/images/luke.jpg'>
+            <img id='yoda' class='col-sm-3 char mx-auto d-block' src='assets/images/yoda.jpg'>
+        </div>
+        
+        <div class="row" id="fightArea">
+            <h2>Fight Area</h2>
+            <div class="playerSide col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div id="hero-name" class="mx-auto"></div>
+                    <div id="hero-hp" class="mx-auto"></div> 
+                    <div id="hero-total-hp" class="mx-auto"></div>
+                    <div id="hero-fight-area" class="mx-auto"></div>
             </div>
-            <div class = "col-sm-12 col-md-12 col-lg-12">
-                    <div id="charlist">
-                        
-                    </div>
+            <div class="enemySide col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div id="enemy-name" class="mx-auto"></div>
+                    <div id="enemy-hp" class="mx-auto"></div> 
+                    <div id="enemy-total-hp" class="mx-auto"></div>
+                    <div id="enemy-fight-area" class="mx-auto"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div id="attackButton">
+                <button id="attackBtn" type="button" class="mx-auto d-block btn btn-outline-warning">Attack!</button>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>>
+    <script src="/assets/javascript/game.js"></script>
 </body>
