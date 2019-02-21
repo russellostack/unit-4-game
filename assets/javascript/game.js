@@ -86,6 +86,7 @@ function playerSelect(){
 
 }
 function enemySelect(){
+// almost copy and paste of the player chosing function, but with a check for if the player has alreadu been chosen. update display
 
 }
 
@@ -131,8 +132,11 @@ function statusCheck(){
     }	
 }
 function gameLose(){
-
+// reset enemy variables, maybe add a replay button.
 }
 function gameWin(){
-    
+    //updates wins, resets enemy variables
+}
+function reset()){
+//resets all the hero variables, the hero selected and number of wins.
 }
