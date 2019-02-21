@@ -33,7 +33,10 @@ playerOneSelected = false;
 playerTwoSelected = false;
 gameStart = false;
 var enemyHp;
-var enemiesRemaining = players.length -1;
+var enemiesRemaining = heros.length -1;
+playerSelect();
+enemySelect();
+fight();
 
 function playerSelect(){
     $("#maul").on("click", function(){
